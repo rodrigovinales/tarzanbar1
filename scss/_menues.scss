@@ -1,0 +1,142 @@
+/* -- MENU -- */
+
+.menuContenedor {
+    background-image: $fondo-cubiertos;
+ }
+ .platos {
+    display:flex; 
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: space-around;
+    margin: 0.9375rem;
+    img {
+        width: 70%;
+        height: $medidaAlto*4.8;
+        margin:0.625rem;
+        border-radius: 1.25rem;
+     }
+     p {
+        color: rgb(13, 4, 90);
+        background-color: rgba(254, 254, 254, 0.7);
+        font-size: 2em;
+        border-radius: 10px;
+        font-weight: 800;
+     }
+ }
+ .menu1__tabla {
+    background-color: rgba(176,196,222,0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 50%;
+    margin-top: 30px;  
+    li {
+        padding: 3px;
+     } 
+ }
+ .menu1 {
+    margin-top: 30px;
+    display:flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    width: auto;
+    justify-content: space-around;
+    background-image: $fondo-cubiertos;
+    list-style: none;
+ }
+ .tabla caption {
+    font-size: 2rem;
+    text-align: center;
+ }
+.menu2__menuPlato {
+    margin-top: 10px;
+    width: 40%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid black;  
+    height: auto;
+    img {
+        padding: 5px;
+        width: 70%;
+        height: 40%;
+     }
+ }
+ .menu2 {
+    font-family: 'charm';
+    font-size: 1.5625rem;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+ }
+ .menu2__menuPlato--modificado {
+    @extend .menu2__menuPlato;
+    font-size: 0.8125rem;
+    span:hover {
+        text-transform: uppercase ;
+        font-weight: 700;
+     }
+     img {
+        width: 10vw;
+        height: 15vh;
+        border: 1px solid red;
+     }
+ }
+
+
+ .elaborados {
+    background: hsl(222, 73%, 85%);
+ }
+ 
+ 
+ @media screen and (max-width:576px) {
+    .platos img {
+       height: 35%;
+       border-radius: 1.25rem;
+    }
+    .platos p {
+       font-size: 90%;
+    }
+    .menu1 {
+       display:block;
+    }
+    .tabla {
+       width: 100%;
+    }
+    .menu2 {
+       display:block;
+       }
+    .menu2__menuPlato {
+       width: 100%;
+    }
+    .menu2__menuPlato--modificado img   {
+       width: 75%;
+    }
+ }
+ 
+ @media screen and (max-width:375px) {
+    .platos img {
+       height: 35%;
+       border-radius: 1.25rem;
+    }
+    .platos p {
+       font-size: 90%;
+    }
+    .menu1 {
+       display:block;
+    }
+    .tabla {
+       width: 100%;
+    }
+    .menu2 {
+       display:block;
+       }
+    .menu2__menuPlato {
+       width: 100%;
+    }
+    .menu2__menuPlato--modificado img   {
+       width: 75%;
+    }
+ }

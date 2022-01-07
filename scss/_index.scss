@@ -1,0 +1,76 @@
+
+  .principal {
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    p {
+        font-family: 'charm';
+        font-weight: 800;
+        font-size: 1rem;
+        padding: 3px;
+        color:hsl(335, 50%, 20%);
+        text-transform: uppercase;
+      }
+      img {
+        width: 100%;
+        padding: 3px;
+        height: 50%;
+      }
+  }  
+   
+  .carousel-inner img {
+    width: 100%;
+    height: $medidaAlto *5;
+  }
+  .carousel-caption p {
+    font-size: 2rem;
+    color:whitesmoke;
+    font-family: 'comic neue';
+  }
+  .carousel-caption h3 {
+    font-size: 4rem;
+    color:yellow;
+    font-family: 'comic neue';
+  }
+  .aviso {
+    text-align: center;
+  }
+ 
+ .indexImagen img {
+   height: 265px;
+   border-radius: 10px;
+ }
+ 
+ @media screen and (max-width:1200px) {
+   .principal p {
+     font-size: $letraChica*1.2
+   }
+ }
+ @media screen and (max-width:991px) {
+  .principal p {
+    font-size: $letraChica*1.4
+  }
+}
+
+  @media screen and (max-width:375px) {
+   .carousel-caption p {
+     font-size: 1rem;
+   }
+   .carousel-caption h3 {
+     font-size: 2rem;
+   }
+   .carousel-inner img {
+     width: 100%;
+     height: $medidaAlto*4;
+   }
+   .principal p {
+    width: 100%;
+    font-size: $letraChica;
+   } 
+   .indexImagen img {
+    height: 125px;
+    border-radius: 10px;
+  }
+  }
+  

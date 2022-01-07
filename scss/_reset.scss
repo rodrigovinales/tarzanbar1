@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* ELEMENTOS DE SASS */
+
+$color-hf:radial-gradient( #778899, #383632);
+$fondo-cubiertos: url(../imagenes/fondocubiertos.jpg);
+
+$medidaAlto:100px;
+$medidaAncho:100px;
+$letraChica: 0.5rem;
+$letraGrande: 3rem;
+$colorUno: opcion1;
+
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  }
+ body{
+   font-size: 62.5%;
+   animation-duration: 1s;
+   animation-name: appearAll;
+ }
+ 
+ @keyframes appearAll {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+ /*- -- TEXTO QUE APARECE EN TODAS LAS SECCIONES */
+.textoPrincipal {
+  display:flex;
+  font-size: 5vh;
+  justify-content: center;
+  padding: 3px;   
+  h2 {
+    font-family: 'Fredericka the Great';
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid lightslategrey;
+    background-color: whitesmoke;
+    padding: 5px;
+  }
+}
